@@ -4,41 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Aberturas DP</title>
-    <!--
-    ================================================================
-    NETLIFY CMS - PANEL DE ADMINISTRACIÓN
-    ================================================================
     
-    INSTRUCCIONES DE CONFIGURACIÓN:
-    
-    1. ACTIVAR IDENTITY EN NETLIFY:
-       - Ir a tu sitio en Netlify → Settings → Identity
-       - Click en "Enable Identity"
-       - En "Registration preferences" seleccionar "Invite only"
-       - En "External providers" puedes habilitar Google/GitHub
-    
-    2. AÑADIR USUARIOS:
-       - En Identity → Users → Invite users
-       - Ingresar email y enviar invitación
-    
-    3. CONFIGURAR GIT GATEWAY:
-       - En Settings → Identity → Services → Git Gateway
-       - Click en "Enable Git Gateway"
-       - Esto permite guardar cambios en tu repositorio
-    
-    4. ACCEDER AL PANEL:
-       - Ir a: https://tusitio.netlify.app/admin/
-       - Login con email/contraseña o proveedores externos
-    
-    NOTA: La primera vez que accedas, recibirás un email
-    para verificar tu cuenta.
-    ================================================================
-    -->
-    
-    <!-- Script de Netlify CMS -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    
-    <!-- Script de Netlify Identity (requerido para autenticación) -->
+    <!-- Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     
     <style>
@@ -47,26 +14,15 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
         
-        /* Estilos personalizados para el login */
-        .nc-githubAuthenticationPage-root {
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-        }
-        
-        .nc-githubAuthenticationPage-logo {
-            display: none;
-        }
-        
-        /* Logo personalizado */
         .custom-logo {
             text-align: center;
             padding: 2rem;
-            background: #f3f4f6;
-            border-bottom: 1px solid #e5e7eb;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
         }
         
         .custom-logo h1 {
             margin: 0;
-            color: #1f2937;
             font-size: 1.5rem;
             display: flex;
             align-items: center;
@@ -77,17 +33,20 @@
         .custom-logo-icon {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #2563eb, #9ca3af);
+            background: white;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #2563eb;
+        }
+
+        #nc-root {
+            min-height: calc(100vh - 100px);
         }
     </style>
 </head>
 <body>
-    <!-- Logo personalizado -->
     <div class="custom-logo">
         <h1>
             <div class="custom-logo-icon">
@@ -100,10 +59,11 @@
         </h1>
     </div>
 
-    <!-- 
-    Netlify CMS se inicializa automáticamente desde el script.
-    La configuración está en config.yml
-    -->
+    <!-- Contenedor del CMS -->
+    <div id="nc-root"></div>
+
+    <!-- Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.10.192/dist/netlify-cms.js"></script>
     
     <script>
         // Inicializar Netlify Identity
@@ -116,12 +76,11 @@
                 }
             });
         }
-        
-        // Configuración personalizada de Netlify CMS
-        CMS.init({
-            config: {
-                load_config_file: true,
-                config_file: 'config.yml'
+
+        // Configurar el CMS cuando esté listo
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.CMS) {
+                CMS.init();
             }
         });
     </script>
