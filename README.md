@@ -182,15 +182,6 @@ Editá el archivo `content/seo.json` para cambiar:
 - Palabras clave
 - Imagen para redes sociales
 
-## 📱 WhatsApp
-
-El botón flotante de WhatsApp ya está configurado con el número:
-`+54 9 11 6988-4066`
-
-Para cambiarlo, buscá en `index.html`:
-```html
-<a href="https://wa.me/5491169884066?text=..."
-```
 
 ## 🛠️ Tecnologías utilizadas
 
