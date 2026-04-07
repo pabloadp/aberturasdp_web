@@ -1,0 +1,27 @@
+# ================================================================
+# NETLIFY REDIRECTS
+# ================================================================
+# Este archivo configura redirecciones y reglas de encabezados
+# para tu sitio en Netlify.
+# 
+# DOCUMENTACIÓN: https://docs.netlify.com/routing/redirects/
+# ================================================================
+
+# Redirección de www a dominio principal (descomentar si tienes dominio personalizado)
+# https://www.tudominio.com/* https://tudominio.com/:splat 301!
+
+# Redirección de HTTP a HTTPS (Netlify lo hace automáticamente)
+# http://* https://:splat 301!
+
+# SPA (Single Page Application) - Redirigir 404 a index.html
+# Descomentar si usas React Router o similar:
+# /* /index.html 200
+
+# Redirecciones personalizadas
+# /old-page /new-page 301
+
+# ================================================================
+# HEADERS DE SEGURIDAD (en netlify.toml o _headers)
+# ================================================================
+# Estos headers mejoran la seguridad de tu sitio
+# Se pueden agregar en un archivo _headers o netlify.toml
