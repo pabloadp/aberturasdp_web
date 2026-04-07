@@ -1977,5 +1977,32 @@
             e.target.value = value;
         });
     </script>
+
+    <!-- ================================================================
+         NETLIFY IDENTITY WIDGET - REQUERIDO PARA EL CMS
+         ================================================================
+         Este script es NECESARIO para que funcione el login del CMS.
+         Permite que los usuarios:
+         - Acepten invitaciones por email
+         - Inicien sesión en el panel de administración
+         - Recuperen contraseñas
+         
+         SIN ESTE SCRIPT: El link de invitación del email no funcionará
+         y redirigirá al sitio web en lugar de mostrar el formulario.
+         ================================================================ -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    <script>
+        // Inicializar Netlify Identity
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 </html>
