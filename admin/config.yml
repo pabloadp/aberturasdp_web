@@ -86,3 +86,7 @@ collections:
 
 editor:
   preview: false
+
+slug:
+  encoding: "unicode"
+  clean_accents: false
