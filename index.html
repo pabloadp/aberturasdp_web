@@ -1681,57 +1681,48 @@
                 3. Agregar SDK de EmailJS
                 =====================================================
                 -->
-                <form id="contactForm" action="https://formspree.io/f/mdapvkyb" method="POST">
-                    
-                    <!-- Campo oculto para Netlify -->
-                    <input type="hidden" name="form-name" value="contacto">
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nombre" class="form-label">Nombre completo *</label>
-                            <input type="text" id="nombre" name="nombre" class="form-input" 
-                                   placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono" class="form-label">Teléfono *</label>
-                            <input type="tel" id="telefono" name="telefono" class="form-input" 
-                                   placeholder="+54 9 11 1234-5678" required>
-                        </div>
-                    </div>
+                <form action="https://formspree.io/f/mdapvkyb" method="POST">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="nombre" class="form-label">Nombre completo *</label>
+            <input type="text" name="nombre" class="form-input" 
+                   placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono" class="form-label">Teléfono *</label>
+            <input type="tel" name="telefono" class="form-input" 
+                   placeholder="+54 9 11 1234-5678" required>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email *</label>
-                        <input type="email" id="email" name="email" class="form-input" 
-                               placeholder="tu@email.com" required>
-                    </div>
+    <div class="form-group">
+        <label for="email" class="form-label">Email *</label>
+        <input type="email" name="email" class="form-input" 
+               placeholder="tu@email.com" required>
+    </div>
 
-                    <div class="form-group">
-                        <label for="tipo" class="form-label">Tipo de consulta *</label>
-                        <select id="tipo" name="tipo" class="form-select" required>
-                            <option value="" disabled selected>Seleccioná una opción</option>
-                            <option value="aberturas">Aberturas de Aluminio</option>
-                            <option value="pvc">Aberturas de PVC</option>
-                            <option value="viviendas">Viviendas Modulares</option>
-                            <option value="otro">Otra consulta</option>
-                        </select>
-                    </div>
+    <div class="form-group">
+        <label for="tipo" class="form-label">Tipo de consulta *</label>
+        <select name="tipo" class="form-select" required>
+            <option value="" disabled selected>Seleccioná una opción</option>
+            <option value="aberturas">Aberturas de Aluminio</option>
+            <option value="pvc">Aberturas de PVC</option>
+            <option value="viviendas">Viviendas Modulares</option>
+            <option value="otro">Otra consulta</option>
+        </select>
+    </div>
 
-                    <div class="form-group">
-                        <label for="mensaje" class="form-label">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" class="form-textarea" 
-                                  placeholder="Contanos sobre tu proyecto..." required></textarea>
-                    </div>
+    <div class="form-group">
+        <label for="mensaje" class="form-label">Mensaje *</label>
+        <textarea name="mensaje" class="form-textarea" 
+                  placeholder="Contanos sobre tu proyecto..." required></textarea>
+    </div>
 
-                    <button type="submit" class="btn btn-primary form-submit">
-                        <i class="fas fa-paper-plane"></i>
-                        Enviar consulta
-                    </button>
-
-                    <div class="form-success" id="formSuccess">
-                        <i class="fas fa-check-circle"></i>
-                        ¡Gracias por tu consulta! Te contactaremos a la brevedad.
-                    </div>
-                </form>
+    <button type="submit" class="btn btn-primary form-submit">
+        <i class="fas fa-paper-plane"></i>
+        Enviar consulta
+    </button>
+</form>
             </div>
         </div>
     </section>
@@ -1884,12 +1875,12 @@
         const contactForm = document.getElementById('contactForm');
         const formSuccess = document.getElementById('formSuccess');
 
-        contactForm.addEventListener('submit', (e) => {
+        // contactForm.addEventListener('submit', (e) => {
             // Si estás usando Netlify Forms, no prevengas el envío
             // e.preventDefault(); // Comentar esta línea si usas Netlify Forms
             
             // Para pruebas locales sin backend, descomentar:
-            e.preventDefault();
+            // e.preventDefault(); //
             
             // Obtener datos del formulario
             const formData = new FormData(contactForm);
