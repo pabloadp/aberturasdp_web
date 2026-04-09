@@ -10,7 +10,7 @@
     
     <title>Aberturas DP | Aberturas de Aluminio y PVC - Viviendas Modulares</title>
     
-    <!-- Favicon placeholder - Reemplazar con tu logo -->
+    <!-- Favicon - Reemplazar con tu logo -->
     <link rel="icon" type="image/png" href="favicon.png">
     
     <!-- Google Fonts -->
@@ -220,7 +220,7 @@
             height: 80px;
         }
 
-        /* Logo - Reemplazar con tu imagen */
+        /* Logo */
         .logo {
             display: flex;
             align-items: center;
@@ -234,15 +234,15 @@
         .logo-img {
             width: 180px;
             height: auto;
-            /* Reemplazar esta URL con tu logo: */
-            /* background-image: url(logo.png); */
-            /* background: linear-gradient(135deg, var(--color-primary), var(--color-aluminum)); */
             border-radius: var(--border-radius);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 1.5rem;
+        }
+
+        .logo-img img {
+            width: 100%;
+            height: auto;
         }
 
         .nav-menu {
@@ -876,33 +876,6 @@
             font-size: 1rem;
         }
 
-        /* Mensaje de éxito */
-        .form-success {
-            display: none;
-            background: var(--color-accent);
-            color: var(--color-white);
-            padding: 1rem;
-            border-radius: var(--border-radius);
-            text-align: center;
-            margin-top: 1rem;
-        }
-
-        .form-success.active {
-            display: block;
-            animation: slideDown 0.5s ease;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         /* ============================================
            FOOTER
            ============================================ */
@@ -1222,7 +1195,7 @@
          ============================================ -->
     <header class="header" id="header">
         <nav class="nav container">
-            <!-- LOGO - Reemplazar con tu imagen -->
+            <!-- LOGO -->
             <a href="#" class="logo">
                 <div class="logo-img">
                     <img src="logo.png" alt="Aberturas DP">
@@ -1275,10 +1248,8 @@
                 </div>
             </div>
             <div class="hero-image fade-in">
-                <!-- IMAGEN HERO - Reemplazar con tu foto -->
                 <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop" 
                      alt="Aberturas modernas de aluminio">
-                <!-- Reemplazar con: src="ruta/a/tu/imagen-hero.jpg" -->
                 
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -1309,10 +1280,8 @@
                 <!-- Aluminio -->
                 <div class="service-card fade-in">
                     <div class="service-image">
-                        <!-- IMAGEN ALUMINIO - Reemplazar con tu foto -->
                         <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=400&fit=crop" 
                              alt="Ventana de aluminio moderna">
-                        <!-- Reemplazar con: src="ruta/a/tu/foto-aluminio.jpg" -->
                     </div>
                     <div class="service-content">
                         <div class="service-icon">
@@ -1351,10 +1320,8 @@
                 <!-- PVC -->
                 <div class="service-card fade-in">
                     <div class="service-image">
-                        <!-- IMAGEN PVC - Reemplazar con tu foto -->
                         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" 
                              alt="Ventana de PVC">
-                        <!-- Reemplazar con: src="ruta/a/tu/foto-pvc.jpg" -->
                     </div>
                     <div class="service-content">
                         <div class="service-icon">
@@ -1399,10 +1366,8 @@
     <section class="section modular" id="viviendas">
         <div class="container modular-container">
             <div class="modular-image fade-in">
-                <!-- IMAGEN VIVIENDA MODULAR - Reemplazar con tu foto -->
                 <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop" 
                      alt="Vivienda modular de contenedor">
-                <!-- Reemplazar con: src="ruta/a/tu/foto-vivienda.jpg" -->
                 <span class="modular-badge">Novedad</span>
             </div>
 
@@ -1493,11 +1458,9 @@
             </p>
 
             <div class="gallery-grid">
-                <!-- GALERÍA ITEM 1 - Reemplazar con tu foto -->
                 <div class="gallery-item fade-in" onclick="openLightbox(this)">
                     <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop" 
                          alt="Trabajo realizado - Ventanal moderno">
-                    <!-- Reemplazar con: src="ruta/a/tu/foto1.jpg" -->
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Ventanal de Aluminio</h4>
@@ -1506,11 +1469,9 @@
                     </div>
                 </div>
 
-                <!-- GALERÍA ITEM 2 - Reemplazar con tu foto -->
                 <div class="gallery-item fade-in" onclick="openLightbox(this)">
                     <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=400&fit=crop" 
                          alt="Trabajo realizado - Puerta balconera">
-                    <!-- Reemplazar con: src="ruta/a/tu/foto2.jpg" -->
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Puerta Balconera</h4>
@@ -1519,11 +1480,9 @@
                     </div>
                 </div>
 
-                <!-- GALERÍA ITEM 3 - Reemplazar con tu foto -->
                 <div class="gallery-item fade-in" onclick="openLightbox(this)">
                     <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&h=400&fit=crop" 
                          alt="Trabajo realizado - Ventanas PVC">
-                    <!-- Reemplazar con: src="ruta/a/tu/foto3.jpg" -->
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Ventanas de PVC</h4>
@@ -1532,11 +1491,9 @@
                     </div>
                 </div>
 
-                <!-- GALERÍA ITEM 4 - Reemplazar con tu foto -->
                 <div class="gallery-item fade-in" onclick="openLightbox(this)">
                     <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=400&fit=crop" 
                          alt="Trabajo realizado - Vivienda modular">
-                    <!-- Reemplazar con: src="ruta/a/tu/foto4.jpg" -->
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Vivienda Modular</h4>
@@ -1545,11 +1502,9 @@
                     </div>
                 </div>
 
-                <!-- GALERÍA ITEM 5 - Reemplazar con tu foto -->
                 <div class="gallery-item fade-in" onclick="openLightbox(this)">
                     <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" 
                          alt="Trabajo realizado - Abertura comercial">
-                    <!-- Reemplazar con: src="ruta/a/tu/foto5.jpg" -->
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Abertura Comercial</h4>
@@ -1558,11 +1513,9 @@
                     </div>
                 </div>
 
-                <!-- GALERÍA ITEM 6 - Reemplazar con tu foto -->
                 <div class="gallery-item fade-in" onclick="openLightbox(this)">
                     <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=600&h=400&fit=crop" 
                          alt="Trabajo realizado - Frente de local">
-                    <!-- Reemplazar con: src="ruta/a/tu/foto6.jpg" -->
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Frente de Local</h4>
@@ -1599,7 +1552,6 @@
                     </div>
                     <div class="contact-details">
                         <h4>Teléfono / WhatsApp</h4>
-                        <!-- DATO DE CONTACTO - Teléfono -->
                         <a href="tel:+5491169884066">+54 9 11 6988-4066</a>
                     </div>
                 </div>
@@ -1611,7 +1563,6 @@
                     </div>
                     <div class="contact-details">
                         <h4>Email</h4>
-                        <!-- DATO DE CONTACTO - Email (reemplazar) -->
                         <a href="mailto:contacto@aberturasdp.com">contacto@aberturasdp.com</a>
                     </div>
                 </div>
@@ -1623,7 +1574,6 @@
                     </div>
                     <div class="contact-details">
                         <h4>Dirección</h4>
-                        <!-- DATO DE CONTACTO - Dirección -->
                         <p>San Vicente, provincia de Buenos Aires, Argentina</p>
                     </div>
                 </div>
@@ -1643,12 +1593,10 @@
                 <div>
                     <h4 style="margin-bottom: 1rem;">Seguinos en redes</h4>
                     <div class="social-links">
-                        <!-- RED SOCIAL - Instagram (reemplazar URL) -->
                         <a href="https://instagram.com/aberturadp" target="_blank" rel="noopener" 
                            class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <!-- Agregar más redes sociales si es necesario -->
                         <a href="#" target="_blank" rel="noopener" 
                            class="social-link" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
@@ -1664,65 +1612,52 @@
                 
                 <!-- 
                 =====================================================
-                INSTRUCCIONES PARA CONECTAR EL FORMULARIO:
-                
-                OPCIÓN 1 - Netlify Forms (Recomendado):
-                1. Agregar atributo: data-netlify="true" al form
-                2. Agregar campo oculto: <input type="hidden" name="form-name" value="contacto">
-                3. Netlify procesará automáticamente los envíos
-                
-                OPCIÓN 2 - Formspree:
-                1. Cambiar action por: https://formspree.io/f/TU_ID
-                2. Registrarse en formspree.io
-                
-                OPCIÓN 3 - EmailJS:
-                1. Registrarse en emailjs.com
-                2. Configurar servicio y plantilla
-                3. Agregar SDK de EmailJS
+                FORMULARIO CON FORMSPREE
+                Reemplazá "mdapvkyb" con tu código de Formspree
                 =====================================================
                 -->
                 <form action="https://formspree.io/f/mdapvkyb" method="POST">
-    <div class="form-row">
-        <div class="form-group">
-            <label for="nombre" class="form-label">Nombre completo *</label>
-            <input type="text" name="nombre" class="form-input" 
-                   placeholder="Tu nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="telefono" class="form-label">Teléfono *</label>
-            <input type="tel" name="telefono" class="form-input" 
-                   placeholder="+54 9 11 1234-5678" required>
-        </div>
-    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre completo *</label>
+                            <input type="text" name="nombre" class="form-input" 
+                                   placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono" class="form-label">Teléfono *</label>
+                            <input type="tel" name="telefono" class="form-input" 
+                                   placeholder="+54 9 11 1234-5678" required>
+                        </div>
+                    </div>
 
-    <div class="form-group">
-        <label for="email" class="form-label">Email *</label>
-        <input type="email" name="email" class="form-input" 
-               placeholder="tu@email.com" required>
-    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" name="email" class="form-input" 
+                               placeholder="tu@email.com" required>
+                    </div>
 
-    <div class="form-group">
-        <label for="tipo" class="form-label">Tipo de consulta *</label>
-        <select name="tipo" class="form-select" required>
-            <option value="" disabled selected>Seleccioná una opción</option>
-            <option value="aberturas">Aberturas de Aluminio</option>
-            <option value="pvc">Aberturas de PVC</option>
-            <option value="viviendas">Viviendas Modulares</option>
-            <option value="otro">Otra consulta</option>
-        </select>
-    </div>
+                    <div class="form-group">
+                        <label for="tipo" class="form-label">Tipo de consulta *</label>
+                        <select name="tipo" class="form-select" required>
+                            <option value="" disabled selected>Seleccioná una opción</option>
+                            <option value="aberturas">Aberturas de Aluminio</option>
+                            <option value="pvc">Aberturas de PVC</option>
+                            <option value="viviendas">Viviendas Modulares</option>
+                            <option value="otro">Otra consulta</option>
+                        </select>
+                    </div>
 
-    <div class="form-group">
-        <label for="mensaje" class="form-label">Mensaje *</label>
-        <textarea name="mensaje" class="form-textarea" 
-                  placeholder="Contanos sobre tu proyecto..." required></textarea>
-    </div>
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">Mensaje *</label>
+                        <textarea name="mensaje" class="form-textarea" 
+                                  placeholder="Contanos sobre tu proyecto..." required></textarea>
+                    </div>
 
-    <button type="submit" class="btn btn-primary form-submit">
-        <i class="fas fa-paper-plane"></i>
-        Enviar consulta
-    </button>
-</form>
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar consulta
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -1776,11 +1711,6 @@
     <!-- ============================================
          BOTÓN WHATSAPP FLOTANTE
          ============================================ -->
-    <!-- 
-    DATO DE CONTACTO - WhatsApp
-    Reemplazar el número en el href: 
-    https://wa.me/5491169884066?text=TU_MENSAJE
-    -->
     <a href="https://wa.me/5491169884066?text=Hola%2C%20vengo%20de%20su%20web%20y%20me%20interesa%20solicitar%20un%20presupuesto" 
        class="whatsapp-float" 
        target="_blank" 
@@ -1870,41 +1800,6 @@
         });
 
         // ============================================
-        // FORMULARIO DE CONTACTO
-        // ============================================
-        const contactForm = document.getElementById('contactForm');
-        const formSuccess = document.getElementById('formSuccess');
-
-         contactForm.addEventListener('submit', (e) => {
-            // Si estás usando Netlify Forms, no prevengas el envío
-            // e.preventDefault(); // Comentar esta línea si usas Netlify Forms
-            
-            // Para pruebas locales sin backend, descomentar:
-            // e.preventDefault(); //
-            
-            // Obtener datos del formulario
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-            
-            // Mostrar datos en consola (para desarrollo)
-            console.log('Datos del formulario:', data);
-            
-            // Mostrar mensaje de éxito
-            formSuccess.classList.add('active');
-            
-            // Resetear formulario
-            contactForm.reset();
-            
-            // Ocultar mensaje después de 5 segundos
-            setTimeout(() => {
-                formSuccess.classList.remove('active');
-            }, 5000);
-            
-            // Si usas Netlify Forms, el formulario se enviará automáticamente
-            // y Netlify redirigirá a una página de éxito o mostrará un mensaje
-        });
-
-        // ============================================
         // AÑO ACTUAL EN FOOTER
         // ============================================
         document.getElementById('currentYear').textContent = new Date().getFullYear();
@@ -1932,65 +1827,40 @@
         // ============================================
         // VALIDACIÓN DE TELÉFONO (formato argentino)
         // ============================================
-        const telefonoInput = document.getElementById('telefono');
+        const telefonoInput = document.querySelector('input[name="telefono"]');
         
-        telefonoInput.addEventListener('input', (e) => {
-            let value = e.target.value.replace(/\D/g, '');
-            
-            if (value.length > 0) {
-                // Formato: +54 9 11 1234-5678
-                if (value.length <= 2) {
-                    value = '+' + value;
-                } else if (value.length <= 3) {
-                    value = '+' + value.slice(0, 2) + ' ' + value.slice(2);
-                } else if (value.length <= 4) {
-                    value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 3) + ' ' + value.slice(3);
-                } else if (value.length <= 6) {
-                    value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 3) + ' ' + value.slice(3, 5) + ' ' + value.slice(5);
-                } else if (value.length <= 10) {
-                    value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 3) + ' ' + value.slice(3, 5) + ' ' + value.slice(5, 9) + '-' + value.slice(9);
-                } else {
-                    value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 3) + ' ' + value.slice(3, 5) + ' ' + value.slice(5, 9) + '-' + value.slice(9, 13);
+        if (telefonoInput) {
+            telefonoInput.addEventListener('input', (e) => {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                if (value.length > 0) {
+                    // Formato: +54 9 11 1234-5678
+                    if (value.length <= 2) {
+                        value = '+' + value;
+                    } else if (value.length <= 3) {
+                        value = '+' + value.slice(0, 2) + ' ' + value.slice(2);
+                    } else if (value.length <= 4) {
+                        value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 3) + ' ' + value.slice(3);
+                    } else if (value.length <= 6) {
+                        value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 3) + ' ' + value.slice(3, 5) + ' ' + value.slice(5);
+                    } else if (value.length <= 10) {
+                        value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 3) + ' ' + value.slice(3, 5) + ' ' + value.slice(5, 9) + '-' + value.slice(9);
+                    } else {
+                        value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 3) + ' ' + value.slice(3, 5) + ' ' + value.slice(5, 9) + '-' + value.slice(9, 13);
+                    }
                 }
-            }
-            
-            e.target.value = value;
-        });
-    </script>
-
-    <!-- ================================================================
-         CMS LOADER - Carga contenido desde archivos JSON
-         ================================================================
-         Este script lee los archivos JSON generados por Netlify CMS
-         y actualiza el contenido del sitio web automáticamente.
-         ================================================================ -->
-    <script src="cms-loader.js"></script>
-    
-    <!-- ================================================================
-         NETLIFY IDENTITY WIDGET - REQUERIDO PARA EL CMS
-         ================================================================
-         Este script es NECESARIO para que funcione el login del CMS.
-         Permite que los usuarios:
-         - Acepten invitaciones por email
-         - Inicien sesión en el panel de administración
-         - Recuperen contraseñas
-         
-         SIN ESTE SCRIPT: El link de invitación del email no funcionará
-         y redirigirá al sitio web en lugar de mostrar el formulario.
-         ================================================================ -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    
-    <script>
-        // Inicializar Netlify Identity
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
+                
+                e.target.value = value;
             });
         }
     </script>
+
+    <!-- ============================================
+         CMS LOADER - Carga contenido desde archivos JSON
+         ============================================
+         Este script lee los archivos JSON generados por el CMS
+         y actualiza el contenido del sitio web automáticamente.
+         ============================================ -->
+    <script src="cms-loader.js"></script>
 </body>
 </html>
